@@ -1,0 +1,29 @@
+# Life After Dashboards
+
+> Conversations about the future of analytics. Life After Dashboards is a monthly 30-minute live show on agentic analytics, AI agents, business analytics, analytics engineering, data literacy and applied data, hosted by Dânia Meira and José Coto. The show is streamed live on YouTube; the LinkedIn event is the invitation and links to the YouTube live.
+
+Most dashboards are where metrics go to die. AI agents promise to change that, unless they hallucinate your revenue first. Each episode explores the reality of agentic analytics, practical evaluation frameworks, their impact on the analytics function, and what it takes to build AI data systems executives can trust. The tone is conversational and applied, not academic.
+
+## Show
+
+- [Website](https://meiradania.github.io/life-after-dashboards/): home page with the episode list, topics and hosts.
+- [YouTube channel](https://www.youtube.com/@lifeafterdashboards): where each episode is streamed live.
+- [LinkedIn page](https://www.linkedin.com/company/life-after-dashboards): event invitations and show updates.
+- [Privacy policy](https://meiradania.github.io/life-after-dashboards/privacy.html): how event registration data is used.
+
+## Episodes
+
+- Episode 01, "Beyond Static BI: Why We're Here & What's Next": Tuesday 17 November 2026, 12:00-12:30 CET (30 minutes), live on YouTube. Business Intelligence is undergoing its biggest transformation in twenty years, moving from dashboards toward conversational and autonomous AI agents. In this kickoff edition Dânia Meira and José Coto discuss their backgrounds in data architecture and analytics, what motivated them to start the show and how AI is transforming their roles, and what to expect from future episodes: guest interviews, use case discussions, practical breakdowns and community Q&A. A dedicated episode page with the transcript will be added after the episode airs.
+
+## Hosts
+
+- [Dânia Meira](https://www.linkedin.com/in/meiradania): analytics and data literacy.
+- [José Coto](https://www.linkedin.com/in/jose-coto): analytics engineering.
+
+## Topics
+
+Agentic analytics, business analytics, analytics engineering, data literacy, data analytics, applied data, Business Intelligence, conversational analytics, AI agents, dashboards.
+
+## Guests and contact
+
+Guests are welcome: use the "Join as a guest" link on the website home page.
