@@ -1,0 +1,164 @@
+/* Life After Dashboards — generated from tokens.json */
+:root, [data-theme="paper"] {
+  --paper: #f5e6c8; /* Page and canvas ground. Warm newsprint cream in Paper; deep night-navy in Studio (live-stream overlays, dark slides). */
+  --paper-raised: #fff6e3; /* Cards, speech bubbles, chart panels sitting on `paper`. */
+  --ink: #16161d; /* Primary text and headlines on `paper` and `paper-raised` (14.6:1 / 16.8:1 Paper, 14:1 / 12:1 Studio). Flips to cream in Studio. */
+  --ink-muted: #4f4a57; /* Secondary copy, captions, axis labels on `paper` and `paper-raised` (≥6.9:1 Paper, ≥7.7:1 Studio). */
+  --outline: #16161d; /* The pop-art key line: 3px stroke around every sticker, card, button, chart slice and bar. Cream in Studio so shapes read as die-cut stickers. */
+  --dot: #16161d2e; /* Ben-Day halftone dots laid over a fill or the ground (`.lad-halftone`). Texture only — never carries meaning. */
+  --coral: #ee4b3b; /* Lead brand hue — primary buttons, LIVE starbursts, the wordmark face, first chart series. A fill, never text on `paper` (2.99:1); use `coral-text` for words. */
+  --coral-text: #b32d1c; /* Coral when it has to be text: links, inline emphasis on `paper` and `paper-raised` (5.2:1 / 5.9:1 Paper, 6.7:1 / 5.8:1 Studio). */
+  --mustard: #f6c945; /* Poster yellow — episode badges, highlight blocks, the first layer of the wordmark extrusion, second chart series. */
+  --teal: #3db3a0; /* Retro teal — section fields, host B colour (José), third chart series. */
+  --pink: #f0509a; /* Pop pink — host A colour (Dânia), shout accents, fourth chart series. Use sparingly: one pink element per composition. */
+  --blue: #1f5fae; /* Print blue — secondary fields, fifth chart series, links in Studio overlays when on a light card. */
+  --navy: #1b2b57; /* Deep retro navy — the back layer of the wordmark extrusion, title bands, lower thirds. Equals the Studio ground's family, so in Studio pair it with a cream outline. */
+  --on-coral: #16161d; /* Text and icons on a `coral` fill (4.9:1) in both themes. Never white on coral. */
+  --on-mustard: #16161d; /* Text on `mustard` (11.5:1) in both themes. */
+  --on-teal: #16161d; /* Text on `teal` (7:1) in both themes. */
+  --on-pink: #16161d; /* Text on `pink` (5.4:1) in both themes. */
+  --on-blue: #f5e6c8; /* Text on `blue` (5.2:1) in both themes. */
+  --on-navy: #f5e6c8; /* Text on `navy` (11.1:1) in both themes. */
+  --focus: #1f5fae; /* Keyboard focus ring: solid 3px, offset 3px, so it lands on the ground (5.2:1 on `paper`, 10.9:1 on Studio `paper`). */
+  --pop-sm: 3px 3px 0 0 #16161d; /* Buttons, tags, small stickers. */
+  --pop-md: 6px 6px 0 0 #16161d; /* Cards, speech bubbles, chart panels; button hover. */
+  --pop-lg: 10px 10px 0 0 #16161d; /* Hero posters and event cards. */
+}
+[data-theme="studio"] {
+  --paper: #121a33;
+  --paper-raised: #1c2648;
+  --ink: #f5e6c8;
+  --ink-muted: #c4bba6;
+  --outline: #f5e6c8;
+  --dot: #f5e6c82e;
+  --coral-text: #ff7a66;
+  --focus: #f6c945;
+  --pop-sm: 3px 3px 0 0 #05070f;
+  --pop-md: 6px 6px 0 0 #05070f;
+  --pop-lg: 10px 10px 0 0 #05070f;
+}
+:root {
+  --space-1: 4px; /* Hairline gaps: icon to label, legend swatch to text. */
+  --space-2: 8px; /* Halftone pitch; tight stacks; tag padding. */
+  --space-3: 12px; /* Button vertical padding, list gaps. */
+  --space-4: 16px; /* Default gap between elements; phone gutter. */
+  --space-6: 24px; /* Card padding. */
+  --space-8: 32px; /* Gap between cards; poster inner margin. */
+  --space-12: 48px; /* Section padding. */
+  --space-16: 64px; /* Gap between full-bleed colour sections. */
+  --radius-sm: 6px; /* Buttons, tags' inner chips, bars' top corners. */
+  --radius-md: 14px; /* Cards, speech bubbles, chart panels. */
+  --radius-lg: 28px; /* Poster panels and event cards. */
+  --radius-pill: 999px; /* Tags, episode badges, host discs. */
+  --stroke-thin: 2px; /* Chart gridlines and small tags. */
+  --stroke: 3px; /* The default key line around stickers, cards, buttons, slices and bars. */
+  --stroke-heavy: 5px; /* Poster-scale shapes and chart baselines. */
+  --font-display: Bungee, "Arial Black", Impact, sans-serif;
+  --font-shout: Bangers, Impact, "Arial Narrow", sans-serif;
+  --font-body: Rubik, "Trebuchet MS", system-ui, sans-serif;
+  --font-data: "Space Mono", ui-monospace, Menlo, monospace;
+  --text-hero: 400 96px/0.9 var(--font-display); /* Wordmark and poster titles only. Pair with the extrusion (`Wordmark`). */
+  --text-display: 400 64px/0.95 var(--font-display); /* Episode numbers, slide titles, thumbnail headlines. */
+  --text-title: 400 36px/1 var(--font-display); /* Card titles, section openers. Max two lines. */
+  --text-shout: 400 40px/1 var(--font-shout); /* One- to three-word comic shouts inside starbursts: LIVE!, NEW!, WOW!, ON AIR. */
+  --text-shout-sm: 400 24px/1 var(--font-shout); /* Small shouts on tags and badges. */
+  --text-heading: 800 28px/34px var(--font-body); /* In-page headings, newsletter H2. */
+  --text-subheading: 600 20px/26px var(--font-body); /* Card subtitles, host names, H3. */
+  --text-body: 400 17px/26px var(--font-body); /* Running copy: newsletter, descriptions, speech bubbles. */
+  --text-body-sm: 400 15px/22px var(--font-body); /* Card copy, metadata lines. */
+  --text-button: 700 15px/16px var(--font-body); /* Buttons and tags, uppercase. */
+  --text-kpi: 700 48px/1 var(--font-data); /* Big numbers in KPI tiles, timers, episode countdowns. */
+  --text-data: 400 14px/20px var(--font-data); /* Dates, times, chart values, timestamps. */
+  --text-label: 700 12px/16px var(--font-data); /* Uppercase eyebrows, axis and legend labels. */
+}
+.hero {
+  font-family: var(--font-display);
+  font-size: 96px;
+  line-height: 0.9;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+.display {
+  font-family: var(--font-display);
+  font-size: 64px;
+  line-height: 0.95;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.title {
+  font-family: var(--font-display);
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.shout {
+  font-family: var(--font-shout);
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+}
+.shout-sm {
+  font-family: var(--font-shout);
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+}
+.heading {
+  font-family: var(--font-body);
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+.subheading {
+  font-family: var(--font-body);
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.body {
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.body-sm {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.button {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+.kpi {
+  font-family: var(--font-data);
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+.data {
+  font-family: var(--font-data);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.label {
+  font-family: var(--font-data);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}

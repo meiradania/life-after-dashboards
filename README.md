@@ -1,18 +1,25 @@
 # Life After Dashboards
 
 Static site for Life After Dashboards (data literacy and analytics training, consulting and live show).
-Plain HTML and CSS, no build step.
+Plain HTML and CSS, no build step. The look follows the **Life After Dashboards design system** (pop-art print: cream ground, thick key lines, halftone dots, hard colour fields).
 
 ## Files
-- `index.html` – home page
+- `index.html` – home page (hero, Episode 01, what we do, hosts, contact)
 - `privacy.html` – event privacy policy (can be used as the privacy URL for LinkedIn events)
-- `style.css` – styles
+- `style.css` – page layout, built on the design-system tokens
+- `css/tokens.css` – design tokens (colours, type, spacing, shadows); copied from the design system
+- `css/bundle.css` – component styles (`.lad-*`: wordmark, buttons, tags, stickers, cards, event card); copied from the design system
+- `css/fonts.css` – self-hosted fonts, so visitors never call Google
+- `fonts/` – Bungee, Bangers, Rubik, Space Mono (SIL Open Font License, licences included)
+- `img/` – Episode 01 poster/thumbnail (also the social preview image), favicon and touch icon
 - `.nojekyll` – tells GitHub Pages to serve the files as they are
 
+## Updating the design
+`css/tokens.css` and `css/bundle.css` are generated from the design system: replace them with the new versions rather than editing them by hand. Put site-specific rules in `style.css`.
+
 ## To finish
-Search for `TODO` in `index.html` and fill in: the LinkedIn Page URL, host bios, and the next episode link.
+Search for `TODO` in `index.html` and fill in: the LinkedIn event URL, the LinkedIn Page URL, host bios and host photos (circle crop with a 3px outline). After Episode 01, swap the poster in `img/` and the hero copy for the next episode.
 
 ## Publish on GitHub Pages
-1. Create a repository (e.g. `life-after-dashboards`) and push these files to the `main` branch.
-2. In the repository: Settings → Pages → Build and deployment → Source: "Deploy from a branch", Branch: `main`, folder `/ (root)`.
-3. After a minute the site is live at `https://<your-username>.github.io/life-after-dashboards/`.
+Settings → Pages → Build and deployment → Source: "Deploy from a branch", Branch: `main`, folder `/ (root)`.
+Live at `https://<your-username>.github.io/life-after-dashboards/`.
