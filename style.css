@@ -7,12 +7,13 @@ a:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
 /* header */
-header.site { position: sticky; top: 0; z-index: 10; background: var(--paper); border-bottom: var(--stroke) solid var(--outline); }
-header.site .wrap { display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); min-height: 64px; flex-wrap: wrap; padding-top: var(--space-2); padding-bottom: var(--space-2); }
-header.site .brand { text-decoration: none; font-size: 19px; }
+header.site { position: sticky; top: 0; z-index: 10; background: var(--ink); border-bottom: var(--stroke-heavy) solid var(--mustard); }
+header.site .wrap { display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); min-height: 72px; flex-wrap: wrap; padding-top: var(--space-2); padding-bottom: var(--space-2); }
+header.site .brand { text-decoration: none; font-size: 28px; }
 header.site nav { display: flex; gap: var(--space-6); flex-wrap: wrap; }
-header.site nav a { color: var(--ink); text-decoration: none; font: var(--text-button); letter-spacing: .06em; text-transform: uppercase; padding: var(--space-2) 0; border-bottom: var(--stroke) solid transparent; }
-header.site nav a:hover { border-bottom-color: var(--coral); }
+header.site nav a { color: #f5e6c8; text-decoration: none; font: var(--text-button); letter-spacing: .06em; text-transform: uppercase; padding: var(--space-2) 0; border-bottom: var(--stroke) solid transparent; }
+header.site nav a:hover { border-bottom-color: var(--mustard); }
+header.site nav a:focus-visible { outline-color: var(--mustard); }
 
 /* buttons rendered as links */
 a.lad-btn { display: inline-block; text-decoration: none; }
@@ -36,12 +37,10 @@ h2 { font: var(--text-display); font-size: clamp(34px, 6vw, 56px); text-transfor
 .hero .lead { font: var(--text-body); font-size: 18px; max-width: 52ch; margin: 0; }
 
 /* hero conversation: bubbles + host cards */
-.duo { position: relative; display: grid; gap: var(--space-6); padding-right: 14px; }
-.turn { display: grid; gap: calc(var(--space-2) + 22px); justify-items: start; }
-.turn--right { justify-items: end; }
-.turn .lad-bubble { max-width: 400px; font-size: 18px; line-height: 26px; }
-.turn .lad-host { width: 100%; max-width: 340px; }
-.turn--right .lad-host { flex-direction: row-reverse; text-align: right; }
+
+.duo .lad-bubble { max-width: 400px; font-size: 18px; line-height: 26px; }
+.duo .lad-bubble--right { justify-self: end; }
+.duo { display: grid; gap: var(--space-12); padding: 0 14px var(--space-4) 0; }
 /* host photos: drop an <img> in the disc and it covers the initials (the halftone stays on top) */
 .lad-host__disc img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 
@@ -56,11 +55,24 @@ h2 { font: var(--text-display); font-size: clamp(34px, 6vw, 56px); text-transfor
 .tags { display: flex; gap: var(--space-3); flex-wrap: wrap; }
 
 
+/* episodes list */
+.ep-list { display: grid; gap: var(--space-8); grid-template-columns: repeat(auto-fill, minmax(300px, 380px)); }
+.ep-card { display: block; border: var(--stroke-heavy) solid var(--outline); border-radius: var(--radius-lg); box-shadow: var(--pop-lg); overflow: hidden; background: var(--paper-raised); transition: transform .08s ease, box-shadow .08s ease; }
+.ep-card:hover { transform: translate(-3px, -3px); box-shadow: 13px 13px 0 0 var(--outline); }
+.ep-card:focus-visible { outline: 3px solid var(--focus); outline-offset: 5px; }
+.ep-card img { display: block; width: 100%; height: auto; }
+
 /* hosts (Studio theme: night navy ground, cream key line) */
 .hosts { background: var(--paper); color: var(--ink); }
-.hosts .grid { display: grid; gap: var(--space-8); grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
-.hosts .lad-host { width: auto; }
-.hosts .sub { color: var(--ink-muted); }
+.host-grid { display: grid; gap: var(--space-12); grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.hostbox { display: flex; flex-direction: column; align-items: center; text-align: center; gap: var(--space-4); }
+.hostbox .lad-host__disc { border-width: var(--stroke-heavy); box-shadow: var(--pop-md); }
+.hostbox h3 { font: var(--text-heading); font-size: 26px; margin: var(--space-2) 0 0; }
+.hostbox .links { margin: 0; }
+
+/* episode page */
+.episode h1 { font: var(--text-display); font-size: clamp(30px, 5.4vw, 52px); text-transform: uppercase; margin: 0 0 var(--space-4); }
+.back { font: var(--text-button); letter-spacing: .06em; text-transform: uppercase; color: var(--ink); }
 
 /* contact */
 .contact .lad-card { max-width: 720px; }

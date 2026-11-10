@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://meiradania.github.io/life-after-dashboards/sitemap.xml

@@ -4,7 +4,9 @@ Static site for Life After Dashboards (data literacy and analytics training, con
 Plain HTML and CSS, no build step. The look follows the **Life After Dashboards design system** (pop-art print: cream ground, thick key lines, halftone dots, hard colour fields).
 
 ## Files
-- `index.html` – home page (hero, Episode 01, hosts, watch the latest episode / join as a guest)
+- `index.html` – home page (hero, episodes list, hosts, watch the latest episode / join as a guest)
+- `episode-01.html` – Episode 01 page (event card, description, Event structured data)
+- `robots.txt`, `sitemap.xml` – for search engines; add each new episode page to the sitemap
 - `privacy.html` – event privacy policy (can be used as the privacy URL for LinkedIn events)
 - `style.css` – page layout, built on the design-system tokens
 - `css/tokens.css` – design tokens (colours, type, spacing, shadows); copied from the design system
@@ -17,8 +19,11 @@ Plain HTML and CSS, no build step. The look follows the **Life After Dashboards 
 ## Updating the design
 `css/tokens.css` and `css/bundle.css` are generated from the design system: replace them with the new versions rather than editing them by hand. Put site-specific rules in `style.css`.
 
+## Tracking
+Every external link (LinkedIn, YouTube) carries `?utm_source=landingpage`. Internal links and `mailto:` links do not (UTM on internal links would restart the visit in analytics).
+
 ## To finish
-Search for `TODO` in `index.html` and fill in: the Episode 01 LinkedIn event URL, host bios and host photos (circle crop with a 3px outline). After Episode 01, swap the poster in `img/` and the hero copy for the next episode.
+Search for `TODO` in `index.html` and fill in: the Episode 01 LinkedIn event URL, host bios and host photos (an `<img>` in the disc; see the `TODO`s in the Hosts section). After Episode 01, swap the poster in `img/` and the hero copy for the next episode.
 
 ## Publish on GitHub Pages
 Settings → Pages → Build and deployment → Source: "Deploy from a branch", Branch: `main`, folder `/ (root)`.

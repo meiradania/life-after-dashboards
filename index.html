@@ -3,11 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Life After Dashboards – Conversations about the future of analytics</title>
-  <meta name="description" content="Conversations about the future of analytics. A monthly 30-minute live show on agentic analytics, hosted by Dânia Meira and José Coto.">
-  <meta name="theme-color" content="#f5e6c8">
-  <meta property="og:title" content="Life After Dashboards">
-  <meta property="og:description" content="Conversations about the future of analytics. Data literacy and analytics: training, consulting and a live show on LinkedIn.">
+  <title>Life After Dashboards: agentic analytics & the future of BI</title>
+  <meta name="description" content="Monthly 30-minute live show on agentic analytics, AI agents and trusted AI data systems, hosted by Dânia Meira and José Coto. Episode 01: Beyond Static BI.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#16161d">
+  <link rel="canonical" href="https://meiradania.github.io/life-after-dashboards/">
+  <meta property="og:site_name" content="Life After Dashboards">
+  <meta property="og:title" content="Life After Dashboards: agentic analytics & the future of BI">
+  <meta property="og:description" content="Monthly 30-minute live show on agentic analytics, AI agents and trusted AI data systems, hosted by Dânia Meira and José Coto. Episode 01: Beyond Static BI.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://meiradania.github.io/life-after-dashboards/">
   <meta property="og:image" content="https://meiradania.github.io/life-after-dashboards/img/episode-01-thumbnail.png">
@@ -20,12 +23,50 @@
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/bundle.css">
   <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://meiradania.github.io/life-after-dashboards/#website",
+      "url": "https://meiradania.github.io/life-after-dashboards/",
+      "name": "Life After Dashboards",
+      "description": "Conversations about the future of analytics",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://meiradania.github.io/life-after-dashboards/#org",
+      "name": "Life After Dashboards",
+      "url": "https://meiradania.github.io/life-after-dashboards/",
+      "logo": "https://meiradania.github.io/life-after-dashboards/img/avatar-800.png",
+      "sameAs": [
+        "https://www.linkedin.com/company/life-after-dashboards",
+        "https://www.youtube.com/@lifeafterdashboards"
+      ],
+      "founder": [
+        {
+          "@type": "Person",
+          "name": "Dânia Meira",
+          "url": "https://www.linkedin.com/in/meiradania"
+        },
+        {
+          "@type": "Person",
+          "name": "José Coto",
+          "url": "https://www.linkedin.com/in/jose-coto"
+        }
+      ]
+    }
+  ]
+}
+  </script>
 </head>
 <body>
 <header class="site">
   <div class="wrap">
     <a class="brand lad-wordmark lad-wordmark--inline" href="index.html" aria-label="Life After Dashboards, home"><span aria-hidden="true">Life After Dashboards</span></a>
-    <nav aria-label="Main"><a href="#episode">Episode 01</a><a href="#about">Hosts</a><a href="#watch">Watch</a></nav>
+    <nav aria-label="Main"><a href="index.html#episodes">Episodes</a><a href="index.html#hosts">Hosts</a></nav>
   </div>
 </header>
 
@@ -38,74 +79,47 @@
         <p class="lead">Most dashboards are where metrics go to die. AI agents promise to change that. Unless they hallucinate your revenue first. Join us for a monthly 30-minute live conversation about the reality of agentic analytics, practical evaluation frameworks, their impact on the analytics function, and what it takes to build AI data systems executives can trust.</p>
         <div class="btns">
           <!-- TODO: link straight to the latest episode once it is published -->
-          <a class="lad-btn lad-btn--primary" href="https://www.youtube.com/@lifeafterdashboards" rel="noopener">Watch the latest episode</a>
+          <a class="lad-btn lad-btn--primary" href="https://www.youtube.com/@lifeafterdashboards?utm_source=landingpage" rel="noopener">Watch the latest episode</a>
           <a class="lad-btn lad-btn--secondary" href="mailto:meira.dania@gmail.com?subject=Guest%20on%20Life%20After%20Dashboards">Join as a guest</a>
         </div>
       </div>
       <div class="duo">
         <!-- Quotes are sample copy from the design system: replace with lines the hosts actually said. -->
-        <div class="turn">
-          <div class="lad-bubble"><span class="lad-bubble__who"><i class="lad-bubble__dot lad-bg-pink"></i>Dânia Meira</span>Dashboards aren’t dead — but the way we talk to data is changing.</div>
-          <!-- TODO: add a photo: <img src="img/dania.jpg" alt=""> inside the disc, in place of the initials -->
-          <div class="lad-card lad-host"><div class="lad-host__disc lad-bg-pink lad-c-pink" aria-hidden="true"><span>DM</span></div><div><p class="lad-host__name">Dânia Meira</p><p class="lad-host__role">Host</p></div></div>
-        </div>
-        <div class="turn turn--right">
-          <div class="lad-bubble lad-bubble--right"><span class="lad-bubble__who"><i class="lad-bubble__dot lad-bg-teal"></i>José Coto</span>So how do we know the agent’s answer is actually right?</div>
-          <!-- TODO: add a photo: <img src="img/jose.jpg" alt=""> inside the disc, in place of the initials -->
-          <div class="lad-card lad-host"><div class="lad-host__disc lad-bg-teal lad-c-teal" aria-hidden="true"><span>JC</span></div><div><p class="lad-host__name">José Coto</p><p class="lad-host__role">Host</p></div></div>
-        </div>
+        <div class="lad-bubble"><span class="lad-bubble__who"><i class="lad-bubble__dot lad-bg-pink"></i>Dânia Meira</span>Dashboards aren’t dead — but the way we talk to data is changing.</div>
+        <div class="lad-bubble lad-bubble--right"><span class="lad-bubble__who"><i class="lad-bubble__dot lad-bg-teal"></i>José Coto</span>So how do we know the agent’s answer is actually right?</div>
       </div>
     </div>
   </section>
 
-  <section class="episode f-teal" id="episode">
+  <section class="episodes f-teal" id="episodes">
     <div class="wrap">
-      <p class="eyebrow">The live show</p>
-      <h2>Episode 01</h2>
-      <p class="sub">A monthly live show on LinkedIn at lunch break about what happens after the dashboard ships: adoption, trust, decisions and the human side of data. Register to get the link and the recording.</p>
-      <div class="grid">
-        <article class="lad-event">
-          <div class="lad-event__band lad-bg-mustard">
-            <div class="lad-event__burst"><span class="lad-burst lad-c-coral" style="width:104px;height:104px;transform:rotate(0deg)"><svg viewBox="0 0 100 100" aria-hidden="true"><polygon class="lad-burst__shape lad-f-coral" points="50.0,1.0 57.6,16.9 71.3,5.9 71.2,23.4 88.3,19.4 80.6,35.2 97.8,39.1 84.0,50.0 97.8,60.9 80.6,64.8 88.3,80.6 71.2,76.6 71.3,94.1 57.6,83.1 50.0,99.0 42.4,83.1 28.7,94.1 28.8,76.6 11.7,80.6 19.4,64.8 2.2,60.9 16.0,50.0 2.2,39.1 19.4,35.2 11.7,19.4 28.8,23.4 28.7,5.9 42.4,16.9" vector-effect="non-scaling-stroke"/></svg><span class="lad-burst__t" style="font-size:25px">LIVE!</span></span></div>
-            <div class="lad-event__badge"><span class="lad-epbadge lad-bg-navy lad-c-navy" style="width:88px;height:88px;transform:rotate(0deg)" aria-label="Episode 01"><span><span class="lad-epbadge__k" style="display:block">EP</span><span class="lad-epbadge__n" style="font-size:35px;display:block">01</span></span></span></div>
-          </div>
-          <div class="lad-event__body">
-            <p class="lad-eyebrow">LAD #01 · Premiere</p>
-            <h3 class="lad-event__title">Beyond Static BI: Why We’re Here &amp; What’s Next</h3>
-            <p class="lad-event__when">Tue 17 Nov 2026 · 12:00–12:30 CET</p>
-            <p class="lad-event__hosts">Dânia Meira &amp; José Coto</p>
-            <div class="lad-event__foot">
-              <!-- TODO: link straight to the Episode 01 event once it is created (for now: the LinkedIn Page) -->
-              <a class="lad-btn lad-btn--primary" href="https://www.linkedin.com/company/life-after-dashboards" rel="noopener">Register on LinkedIn</a>
-              <span class="lad-tag lad-tag--mustard">30 MIN</span>
-            </div>
-          </div>
+      <h2>Episodes</h2>
+      <div class="ep-list">
+        <a class="ep-card" href="episode-01.html">
+          <img src="img/episode-01-thumbnail.png" width="1280" height="720" alt="Life After Dashboards episode 01: Beyond Static BI, why we’re here and what’s next. Tuesday 17 November 2026, 12:00 CET, with Dânia Meira and José Coto." loading="lazy">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="hosts" id="hosts" data-theme="studio">
+    <div class="wrap">
+      <h2>Hosts</h2>
+      <div class="host-grid">
+        <article class="hostbox" id="dania">
+          <!-- TODO: add a photo: <img src="img/dania.jpg" alt="Photo of Dânia Meira"> inside the disc, in place of the initials -->
+          <div class="lad-host__disc lad-bg-pink lad-c-pink" style="width:200px;height:200px;font-size:78px" aria-hidden="true"><span>DM</span></div>
+          <h3>Dânia Meira</h3>
+          <!-- TODO: add a short bio under the name -->
+          <p class="links"><a class="lad-btn lad-btn--secondary" href="https://www.linkedin.com/in/meiradania?utm_source=landingpage" rel="noopener">Dânia on LinkedIn</a></p>
         </article>
-        <div>
-          <h3>Business Intelligence is changing</h3>
-          <p>It is undergoing its biggest transformation in twenty years. We are moving away from passive, static dashboards toward conversational and autonomous AI agents.</p>
-          <p>In this 30-minute kickoff edition, Dânia and José discuss:</p>
-          <ul>
-            <li>Our respective backgrounds in data architecture and analytics.</li>
-            <li>What motivated us to start this show and open the conversation about the future of analytics and how AI is transforming our roles.</li>
-            <li>What you can expect from future episodes: guest interviews, use case discussions, practical breakdowns, and community Q&amp;A.</li>
-          </ul>
-          <div class="tags"><span class="lad-tag">#AgenticBI</span><span class="lad-tag">#AIAgents</span><span class="lad-tag">#DataAnalytics</span><span class="lad-tag lad-tag--mustard">#LifeAfterDashboards</span></div>
-          <div class="btns" style="margin-top:var(--space-8)"><a class="lad-btn lad-btn--secondary" href="privacy.html">Event privacy policy</a></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="hosts" id="about" data-theme="studio">
-    <div class="wrap">
-      <h2>Who is behind it</h2>
-      <p class="sub">The show is hosted by two people who care about making data understandable.</p>
-      <div class="grid">
-        <!-- TODO: add a one-line bio and, when there is a photo, a circle-cropped one with a 3px outline -->
-        <div class="lad-card lad-host"><div class="lad-host__disc lad-bg-pink lad-c-pink" aria-hidden="true"><span>DM</span></div><div><p class="lad-host__name">Dânia Meira</p><p class="lad-host__role">Data literacy and analytics consultant and trainer.</p></div></div>
-        <!-- TODO: add a one-line bio -->
-        <div class="lad-card lad-host"><div class="lad-host__disc lad-bg-teal lad-c-teal" aria-hidden="true"><span>JC</span></div><div><p class="lad-host__name">José Coto</p><p class="lad-host__role">Co-host of Life After Dashboards.</p></div></div>
+        <article class="hostbox" id="jose">
+          <!-- TODO: add a photo: <img src="img/jose.jpg" alt="Photo of José Coto"> inside the disc, in place of the initials -->
+          <div class="lad-host__disc lad-bg-teal lad-c-teal" style="width:200px;height:200px;font-size:78px" aria-hidden="true"><span>JC</span></div>
+          <h3>José Coto</h3>
+          <!-- TODO: add a short bio under the name -->
+          <p class="links"><a class="lad-btn lad-btn--secondary" href="https://www.linkedin.com/in/jose-coto?utm_source=landingpage" rel="noopener">José on LinkedIn</a></p>
+        </article>
       </div>
     </div>
   </section>
@@ -117,7 +131,7 @@
         <p class="sub" style="margin-bottom:var(--space-6)">Missed a live show? Catch up on the latest episode, or tell us what you would like to talk about and join as a guest.</p>
         <div class="tags">
           <!-- TODO: link straight to the latest episode once it is published -->
-          <a class="lad-btn lad-btn--highlight" href="https://www.youtube.com/@lifeafterdashboards" rel="noopener">Watch the latest episode</a>
+          <a class="lad-btn lad-btn--highlight" href="https://www.youtube.com/@lifeafterdashboards?utm_source=landingpage" rel="noopener">Watch the latest episode</a>
           <a class="lad-btn lad-btn--secondary" href="mailto:meira.dania@gmail.com?subject=Guest%20on%20Life%20After%20Dashboards">Join as a guest</a>
         </div>
       </div>
@@ -128,7 +142,7 @@
 <footer>
   <div class="wrap">
     <span>© <span id="y">2026</span> Life After Dashboards</span>
-    <span><a href="https://www.linkedin.com/company/life-after-dashboards" rel="noopener">LinkedIn</a> · <a href="https://www.youtube.com/@lifeafterdashboards" rel="noopener">YouTube</a> · <a href="privacy.html">Privacy policy</a></span>
+    <span><a href="https://www.linkedin.com/company/life-after-dashboards?utm_source=landingpage" rel="noopener">LinkedIn</a> · <a href="https://www.youtube.com/@lifeafterdashboards?utm_source=landingpage" rel="noopener">YouTube</a> · <a href="privacy.html">Privacy policy</a></span>
   </div>
 </footer>
 <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
