@@ -6,6 +6,7 @@ Plain HTML and CSS, no build step. The look follows the **Life After Dashboards 
 ## Files
 - `index.html` – home page (hero, episodes list, hosts, watch the latest episode / join as a guest)
 - `llms.txt` – plain-text summary of the show for AI agents and assistants (llms.txt convention); update it whenever the episode list, hosts or links change
+- `googlec3672554b75aaad9.html` – Google Search Console ownership verification; do not delete or edit it
 - `robots.txt`, `sitemap.xml` – for search engines; add each new episode page to the sitemap
 - `privacy.html` – event privacy policy (can be used as the privacy URL for LinkedIn events)
 - `style.css` – page layout, built on the design-system tokens
