@@ -5,7 +5,6 @@ Plain HTML and CSS, no build step. The look follows the **Life After Dashboards 
 
 ## Files
 - `index.html` – home page (hero, episodes list, hosts, watch the latest episode / join as a guest)
-- `episode-01.html` – Episode 01 page (event card, description, Event structured data). The show is live on YouTube; the LinkedIn event is the invitation and links to the YouTube live
 - `robots.txt`, `sitemap.xml` – for search engines; add each new episode page to the sitemap
 - `privacy.html` – event privacy policy (can be used as the privacy URL for LinkedIn events)
 - `style.css` – page layout, built on the design-system tokens
@@ -21,6 +20,9 @@ Plain HTML and CSS, no build step. The look follows the **Life After Dashboards 
 
 ## Tracking
 Every external link (LinkedIn, YouTube) carries `?utm_source=landingpage`. Internal links and `mailto:` links do not (UTM on internal links would restart the visit in analytics).
+
+## Episode pages
+There is no page for Episode 01 yet: it goes live after the episode airs, with the transcript (the previous draft is in git history, commit `2b7aad6`). Link the thumbnail in the Episodes list to it then, add it to `sitemap.xml`, and move the `Event` structured data to that page.
 
 ## To finish
 Search for `TODO` in `index.html` and fill in: the Episode 01 LinkedIn event URL, host bios and host photos (an `<img>` in the disc; see the `TODO`s in the Hosts section). After Episode 01, swap the poster in `img/` and the hero copy for the next episode.
