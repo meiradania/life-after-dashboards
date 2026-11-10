@@ -5,7 +5,7 @@ Plain HTML and CSS, no build step. The look follows the **Life After Dashboards 
 
 ## Files
 - `index.html` – home page (hero, episodes list, hosts, watch the latest episode / join as a guest)
-- `episode-01.html` – Episode 01 page (event card, description, Event structured data)
+- `episode-01.html` – Episode 01 page (event card, description, Event structured data). The show is live on YouTube; the LinkedIn event is the invitation and links to the YouTube live
 - `robots.txt`, `sitemap.xml` – for search engines; add each new episode page to the sitemap
 - `privacy.html` – event privacy policy (can be used as the privacy URL for LinkedIn events)
 - `style.css` – page layout, built on the design-system tokens
