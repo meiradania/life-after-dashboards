@@ -49,15 +49,6 @@ h2 { font: var(--text-display); font-size: clamp(34px, 6vw, 56px); text-transfor
 .episode li { margin-bottom: var(--space-2); }
 .tags { display: flex; gap: var(--space-3); flex-wrap: wrap; }
 
-/* what we do */
-.cards { display: grid; gap: var(--space-8); grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
-.cards .lad-card { position: relative; padding-top: var(--space-12); }
-.cards h3 { font: var(--text-heading); margin: 0 0 var(--space-2); }
-.cards p { margin: 0; color: var(--ink-muted); }
-.num { position: absolute; top: -22px; left: var(--space-6); width: 52px; height: 52px; border-radius: var(--radius-pill); border: var(--stroke) solid var(--outline); box-shadow: var(--pop-sm); display: grid; place-items: center; font: 400 22px/1 var(--font-display); }
-.num.c1 { background: var(--coral); color: var(--on-coral); }
-.num.c2 { background: var(--mustard); color: var(--on-mustard); }
-.num.c3 { background: var(--teal); color: var(--on-teal); }
 
 /* hosts (Studio theme: night navy ground, cream key line) */
 .hosts { background: var(--paper); color: var(--ink); }

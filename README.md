@@ -4,7 +4,7 @@ Static site for Life After Dashboards (data literacy and analytics training, con
 Plain HTML and CSS, no build step. The look follows the **Life After Dashboards design system** (pop-art print: cream ground, thick key lines, halftone dots, hard colour fields).
 
 ## Files
-- `index.html` – home page (hero, Episode 01, what we do, hosts, contact)
+- `index.html` – home page (hero, Episode 01, hosts, watch the latest episode / join as a guest)
 - `privacy.html` – event privacy policy (can be used as the privacy URL for LinkedIn events)
 - `style.css` – page layout, built on the design-system tokens
 - `css/tokens.css` – design tokens (colours, type, spacing, shadows); copied from the design system
