@@ -18,7 +18,7 @@ Plain HTML and CSS, no build step. The look follows the **Life After Dashboards 
 `css/tokens.css` and `css/bundle.css` are generated from the design system: replace them with the new versions rather than editing them by hand. Put site-specific rules in `style.css`.
 
 ## To finish
-Search for `TODO` in `index.html` and fill in: the LinkedIn event URL, the LinkedIn Page URL, host bios and host photos (circle crop with a 3px outline). After Episode 01, swap the poster in `img/` and the hero copy for the next episode.
+Search for `TODO` in `index.html` and fill in: the Episode 01 LinkedIn event URL, host bios and host photos (circle crop with a 3px outline). After Episode 01, swap the poster in `img/` and the hero copy for the next episode.
 
 ## Publish on GitHub Pages
 Settings → Pages → Build and deployment → Source: "Deploy from a branch", Branch: `main`, folder `/ (root)`.
